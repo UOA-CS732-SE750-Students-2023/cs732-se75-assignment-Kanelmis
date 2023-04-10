@@ -98,7 +98,7 @@ const Dashboard = () => {
               fontWeight="600"
               sx={{ padding: "30px 30px 0 30px" }}
             >
-              Hosts VS Users
+              Current Number of hackathons in the platform categoried by primary interest
             </Typography>
             <Box height="250px" m="-20px 0 0 0">
               <PieChart2 />
