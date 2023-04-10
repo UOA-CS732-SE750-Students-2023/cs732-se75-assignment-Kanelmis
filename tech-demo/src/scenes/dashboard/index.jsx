@@ -1,12 +1,8 @@
-import { Box } from "@mui/material";
+import { Box, Typography} from "@mui/material";
 import Header from "../../components/Header";
-import StatBox from "../../components/StatBox";
-import PersonAddAlt1RoundedIcon from "@mui/icons-material/PersonAddAlt1Rounded";
-import BackupTableRoundedIcon from "@mui/icons-material/BackupTableRounded";
-import Groups3RoundedIcon from "@mui/icons-material/Groups3Rounded";
-import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 import { tokens } from "../../theme";
 import { useTheme } from "@emotion/react";
+import BarChart from "../../components/BarChart";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -28,12 +24,22 @@ const Dashboard = () => {
         gap="20px"
       >
        
-        {/* ROW 2 */}
         <Box
           gridColumn="span 12"
-          gridRow="span 2"
+          gridRow="span 3"
           backgroundColor={colours.primary[400]}
-        ></Box>
+        >
+            <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ padding: "30px 30px 0 30px" }}
+          >
+            New users Joined in Platform Past 7 Days (Labeled by primary interest)
+          </Typography>
+          <Box height="250px" mt="-20px">
+            <BarChart isDashboard={true} />
+          </Box>
+        </Box>
         <Box
           gridColumn="span 12"
           gridRow="span 2"

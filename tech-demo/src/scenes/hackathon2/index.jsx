@@ -1,13 +1,11 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../data/mockData";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
 import PersonAddAlt1RoundedIcon from '@mui/icons-material/PersonAddAlt1Rounded';
 import BackupTableRoundedIcon from '@mui/icons-material/BackupTableRounded';
 import Groups3RoundedIcon from '@mui/icons-material/Groups3Rounded';
 import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
-import ProgressBar from "../../components/ProgressBar";
 
 const Hackathon2 = () => {
   const theme = useTheme();
@@ -38,10 +36,10 @@ const Hackathon2 = () => {
           justifyContent="center"
         >
           <StatBox
-            title="90"
+            title="20"
             subtitle="Participants"
-            progress="0.7"
-            increase="15%"
+            progress="0.5"
+            increase="+100%"
             icon={
               <Groups3RoundedIcon
                 sx={{ colour: colours.redAccent[600], fontSize: "36px" }}
@@ -58,10 +56,10 @@ const Hackathon2 = () => {
           justifyContent="center"
         >
           <StatBox
-            title="9"
+            title="2"
             subtitle="New Users"
-            progress="0.7"
-            increase="10%"
+            progress="0.9"
+            increase="+10%"
             icon={
               <PersonAddAlt1RoundedIcon
                 sx={{ colour: colours.redAccent[600], fontSize: "36px" }}
@@ -78,10 +76,10 @@ const Hackathon2 = () => {
           justifyContent="center"
         >
           <StatBox
-            title="4"
+            title="10"
             subtitle="Submissions"
-            progress="0.3"
-            increase="+67%"
+            progress="0.9"
+            increase="+5%"
             icon={
               <BackupTableRoundedIcon
                 sx={{ colour: colours.redAccent[600], fontSize: "36px" }}
@@ -98,10 +96,10 @@ const Hackathon2 = () => {
           justifyContent="center"
         >
           <StatBox
-            title="124"
+            title="81"
             subtitle="Total Viewed"
-            progress="0.80"
-            increase="+13%"
+            progress="0.60"
+            increase="+33%"
             icon={
               <VisibilityRoundedIcon 
                 sx={{ colour: colours.redAccent[600], fontSize: "36px" }}

@@ -1,13 +1,11 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../data/mockData";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
 import PersonAddAlt1RoundedIcon from '@mui/icons-material/PersonAddAlt1Rounded';
 import BackupTableRoundedIcon from '@mui/icons-material/BackupTableRounded';
 import Groups3RoundedIcon from '@mui/icons-material/Groups3Rounded';
 import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
-import ProgressBar from "../../components/ProgressBar";
 
 const Hackathon1 = () => {
   const theme = useTheme();
