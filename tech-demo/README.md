@@ -26,14 +26,14 @@ To add
 ```
 yarn add @Nivo/core
 ```
-
-![截屏2023-04-10 下午10.38.33](../../../../../Documents/Typora/Images/截屏2023-04-10 下午10.38.33.png)
+<img width="1315" alt="截屏2023-04-10 下午10 38 33" src="https://user-images.githubusercontent.com/37644658/230888106-b67fd644-f260-45e9-a01d-74596ba30198.png">
 
 ### @mui/x-data-grid
 
 Provide a grid view of data to help admin to look into the detail of the hacakthon and this will bind with the hackathon management section. 
 
-![截屏2023-04-10 下午10.38.38](../../../../../Documents/Typora/Images/截屏2023-04-10 下午10.38.38.png)
+<img width="1340" alt="截屏2023-04-10 下午10 38 38" src="https://user-images.githubusercontent.com/37644658/230888151-14aa17e5-cfaf-4098-83bd-00ba6045447b.png">
+
 
 ## Supportive UI Library. 
 
