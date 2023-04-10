@@ -1,8 +1,11 @@
-import { Box, Typography} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
 import { useTheme } from "@emotion/react";
 import BarChart from "../../components/BarChart";
+import LineChart from "../../components/LineChart";
+import PieChart1 from "../../components/PieChart1";
+import PieChart2 from "../../components/PieChart2";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -23,18 +26,18 @@ const Dashboard = () => {
         gridAutoRows="90px"
         gap="20px"
       >
-       
         <Box
           gridColumn="span 12"
           gridRow="span 3"
           backgroundColor={colours.primary[400]}
         >
-            <Typography
+          <Typography
             variant="h5"
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            New users Joined in Platform Past 7 Days (Labeled by primary interest)
+            New users Joined in Platform Past 7 Days (Labeled by primary
+            interest)
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
@@ -42,19 +45,60 @@ const Dashboard = () => {
         </Box>
         <Box
           gridColumn="span 12"
-          gridRow="span 2"
+          gridRow="span 3"
           backgroundColor={colours.primary[400]}
-        ></Box>
+        >
+          <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ padding: "30px 30px 0 30px" }}
+          >
+            Number of Hackathons that Created in Past 7 Days (Labeled by primary
+            interest)
+          </Typography>
+          <Box height="250px" m="-20px 0 0 0">
+            <LineChart isDashboard={true} />
+          </Box>
+        </Box>
         <Box
-          gridColumn="span 6"
-          gridRow="span 2"
+          gridColumn="span 12"
+          gridRow="span 3"
           backgroundColor={colours.primary[400]}
-        ></Box>
-        <Box
+        >
+          <Box
+            gridColumn="span 6"
+            gridRow="span 3"
+            backgroundColor={colours.primary[400]}
+          >
+            <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ padding: "30px 30px 0 30px" }}
+            >
+              Host VS Users
+            </Typography>
+            <Box height="250px" m="-20px 0 0 0">
+              <PieChart1 />
+            </Box>
+          </Box>
+          <Box
           gridColumn="span 6"
-          gridRow="span 2"
+          gridRow="span 3"
           backgroundColor={colours.primary[400]}
-        ></Box>
+        >
+          <Typography
+            variant="h5"
+            fontWeight="600"
+            sx={{ padding: "30px 30px 0 30px" }}
+          >
+            Hosts VS Users
+          </Typography>
+          <Box height="250px" m="-20px 0 0 0">
+            <PieChart2 />
+          </Box>
+        </Box>
+        </Box>
+        
       </Box>
     </Box>
   );
