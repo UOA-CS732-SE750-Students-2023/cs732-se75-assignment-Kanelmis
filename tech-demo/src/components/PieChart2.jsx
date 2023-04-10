@@ -3,12 +3,14 @@ import { tokens } from "../theme";
 import { useTheme } from "@mui/material";
 import { mockPieData2 as data2 } from "../data/mockData";
 
+//Example of the second Pie Chart that displayed in the dashboard
 const PieChart2 = () => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
   return (
     <ResponsivePie
       data={data2}
+      /* Set Style*/
       theme={{
         axis: {
           domain: {
@@ -107,6 +109,3 @@ const PieChart2 = () => {
 };
 
 export default PieChart2;
-
-
-

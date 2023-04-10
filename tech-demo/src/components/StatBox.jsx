@@ -2,6 +2,7 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import ProgressBar from "./ProgressBar";
 
+/* The statbox to give user a view that porpotion of new joined types */
 const StatBox = ({ title, subtitle, icon, progress, increase }) => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
@@ -20,7 +21,8 @@ const StatBox = ({ title, subtitle, icon, progress, increase }) => {
           </Typography>
         </Box>
         <Box>
-          <ProgressBar progress={progress} size="125"/>
+          {/** Set up stauts bar to represnet the progress */}
+          <ProgressBar progress={progress} size="125" />
         </Box>
       </Box>
       <Box display="flex" justifyContent="space-between" mt="3px">

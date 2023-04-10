@@ -1,3 +1,4 @@
+// Mock Data to demosntrate the Data Grid display function
 export const mockDataHacakthonList = [
   {
     id: 1,
@@ -327,6 +328,7 @@ export const mockDataLineChart = [
   },
 ];
 
+//mock data for user and host contrast
 export const mockPieData1 = [
   {
     id: "host",
@@ -342,6 +344,7 @@ export const mockPieData1 = [
   },
 ];
 
+// mock data for types of hackathons in the platform
 export const mockPieData2 = [
   {
     id: "Web3",

@@ -3,6 +3,7 @@ import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
 
+/* Bar Chart Representation */
 const BarChart = () => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
@@ -10,8 +11,8 @@ const BarChart = () => {
   return (
     <ResponsiveBar
       data={data}
+      /* Set Style*/
       theme={{
-        // added
         axis: {
           domain: {
             line: {
@@ -76,7 +77,7 @@ const BarChart = () => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "", 
+        legend: "",
         legendPosition: "middle",
         legendOffset: 32,
       }}

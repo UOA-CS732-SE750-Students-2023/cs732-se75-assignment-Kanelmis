@@ -1,3 +1,58 @@
+# Data Visualization Tech Demo
+
+Welcome to our Data Visualization Hackathon Demo! Our team  aims developing an online hackathon platform to support individuals in managing and participating in projects. And for this tech-demo, I primarily focuses on demonstrating the capabilities of our chosen visualization library, along with sample UI components library that can be integrated into the platform. The demo will cover the following aspects:
+
+1. **Visualization Library**: An introduction to the selected visualization library, its features, and capabilities.
+2. **Sample Data Set**: A curated data set that represents typical user engagement and platform data.
+3. **Data Visualizations**: A showcase of various data visualizations that can be created to cater t analyistist’s requirement.
+4. **UI Components**: A presentation of potential UI components that created by open source UI libarary which can be integrated into your platform for seamless data visualization and analysis.
+
+
+
+As the team manager, I oversee the entire project and ensure that everything runs smoothly. My role involves working closely with both frontend and backend developers to achieve the project's goals.That’s is why this demo covers both frontend and the backend libraries. 
+
+# Major Libraries Used
+
+Data visualization libraries. Used Line, Pie, Bar Chart and Data Grid in this tech demo. To give visualization of the analyist data winthin the platform.
+
+## Visuliazation Library
+
+### @nivo
+
+Used Line, Pie, Bar Chart in this tech demo. 
+
+To add 
+
+```
+yarn add @Nivo/core
+```
+
+![截屏2023-04-10 下午10.38.33](../../../../../Documents/Typora/Images/截屏2023-04-10 下午10.38.33.png)
+
+### @mui/x-data-grid
+
+Provide a grid view of data to help admin to look into the detail of the hacakthon and this will bind with the hackathon management section. 
+
+![截屏2023-04-10 下午10.38.38](../../../../../Documents/Typora/Images/截屏2023-04-10 下午10.38.38.png)
+
+## Supportive UI Library. 
+
+### @react-pro-sidebar
+
+
+
+Use the library specialised to create a side bar enhence the speed of the development  
+
+### @mui/material
+
+This library support the theme change which is already disabled in this demo. 
+
+
+
+## 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +123,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Debug
+
+## Npm run not works
+
+You'll need to use the `--legacy-peer-deps` flag to work around the error while we work on removing `react-motion` which is causing the error.
+
+```
+npm install --legacy-peer-deps
+```
+
+And run npm start again
+
+```
+npm start
+```
+

@@ -7,6 +7,9 @@ import LineChart from "../../components/LineChart";
 import PieChart1 from "../../components/PieChart1";
 import PieChart2 from "../../components/PieChart2";
 
+/* 
+    This is Dashboard where provide the admin the overall of the analysit of the Platform
+*/
 const Dashboard = () => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
@@ -20,6 +23,7 @@ const Dashboard = () => {
         />
       </Box>
 
+      {/** Bar Chart To demonstrate the interest trendency of the new joined User*/}
       <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
@@ -43,6 +47,8 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
+
+        {/* The line chart to represent the view of the recent created hackathon's type*/}
         <Box
           gridColumn="span 12"
           gridRow="span 3"
@@ -60,6 +66,7 @@ const Dashboard = () => {
             <LineChart isDashboard={true} />
           </Box>
         </Box>
+        {/* Pie Chart to give a distinct comparsion view to the users */}
         <Box
           gridColumn="span 12"
           gridRow="span 3"
@@ -82,23 +89,22 @@ const Dashboard = () => {
             </Box>
           </Box>
           <Box
-          gridColumn="span 6"
-          gridRow="span 3"
-          backgroundColor={colours.primary[400]}
-        >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ padding: "30px 30px 0 30px" }}
+            gridColumn="span 6"
+            gridRow="span 3"
+            backgroundColor={colours.primary[400]}
           >
-            Hosts VS Users
-          </Typography>
-          <Box height="250px" m="-20px 0 0 0">
-            <PieChart2 />
+            <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ padding: "30px 30px 0 30px" }}
+            >
+              Hosts VS Users
+            </Typography>
+            <Box height="250px" m="-20px 0 0 0">
+              <PieChart2 />
+            </Box>
           </Box>
         </Box>
-        </Box>
-        
       </Box>
     </Box>
   );

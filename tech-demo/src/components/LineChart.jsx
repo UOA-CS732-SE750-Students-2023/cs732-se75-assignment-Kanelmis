@@ -1,15 +1,17 @@
 import { ResponsiveLine } from "@nivo/line";
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
-import { mockDataLineChart as data} from "../data/mockData";
+import { mockDataLineChart as data } from "../data/mockData";
 
-const LineChart = ( {isCustomLineColors = false, isDashboard = false}) => {
+/* Line Chart Representation */
+const LineChart = () => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
 
   return (
     <ResponsiveLine
       data={data}
+      /* Set Style*/
       colors={{ scheme: "nivo" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       theme={{

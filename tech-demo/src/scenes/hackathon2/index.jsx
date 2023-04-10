@@ -2,11 +2,12 @@ import { Box, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
-import PersonAddAlt1RoundedIcon from '@mui/icons-material/PersonAddAlt1Rounded';
-import BackupTableRoundedIcon from '@mui/icons-material/BackupTableRounded';
-import Groups3RoundedIcon from '@mui/icons-material/Groups3Rounded';
-import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
+import PersonAddAlt1RoundedIcon from "@mui/icons-material/PersonAddAlt1Rounded";
+import BackupTableRoundedIcon from "@mui/icons-material/BackupTableRounded";
+import Groups3RoundedIcon from "@mui/icons-material/Groups3Rounded";
+import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 
+// Example of the second hacakthon
 const Hackathon2 = () => {
   const theme = useTheme();
   const colours = tokens(theme.palette.mode);
@@ -29,7 +30,7 @@ const Hackathon2 = () => {
         {/* ROW 1 */}
         <Box
           gridColumn="span 6"
-          gridRow = "span 2"
+          gridRow="span 2"
           backgroundColor={colours.primary[400]}
           display="flex"
           alignItems="center"
@@ -49,7 +50,7 @@ const Hackathon2 = () => {
         </Box>
         <Box
           gridColumn="span 6"
-          gridRow = "span 2"
+          gridRow="span 2"
           backgroundColor={colours.primary[400]}
           display="flex"
           alignItems="center"
@@ -69,7 +70,7 @@ const Hackathon2 = () => {
         </Box>
         <Box
           gridColumn="span 6"
-          gridRow = "span 2"
+          gridRow="span 2"
           backgroundColor={colours.primary[400]}
           display="flex"
           alignItems="center"
@@ -87,9 +88,10 @@ const Hackathon2 = () => {
             }
           />
         </Box>
+        {/* ROW 2 */}
         <Box
           gridColumn="span 6"
-          gridRow = "span 2"
+          gridRow="span 2"
           backgroundColor={colours.primary[400]}
           display="flex"
           alignItems="center"
@@ -101,7 +103,7 @@ const Hackathon2 = () => {
             progress="0.60"
             increase="+33%"
             icon={
-              <VisibilityRoundedIcon 
+              <VisibilityRoundedIcon
                 sx={{ colour: colours.redAccent[600], fontSize: "36px" }}
               />
             }
