@@ -3,7 +3,7 @@
 Welcome to our Data Visualization Hackathon Demo! Our team  aims developing an online hackathon platform to support individuals in managing and participating in projects. And for this tech-demo, I primarily focuses on demonstrating the capabilities of our chosen visualization library, along with sample UI components library that can be integrated into the platform. The demo will cover the following aspects:
 
 1. **Visualization Library**: An introduction to the selected visualization library, its features, and capabilities.
-2. **Sample Data Set**: A curated data set that represents typical user engagement and platform data.
+2. **Sample Data Set**: A created data set that represents typical user engagement and platform data.
 3. **Data Visualizations**: A showcase of various data visualizations that can be created to cater t analyistist’s requirement.
 4. **UI Components**: A presentation of potential UI components that created by open source UI libarary which can be integrated into your platform for seamless data visualization and analysis.
 
